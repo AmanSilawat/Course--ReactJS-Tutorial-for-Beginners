@@ -16,7 +16,7 @@ import PureComp from './components/pure_components/PureComp';
 // import ParentComp from './components/pure_components/ParentComp';
 
 import Fragments from './components/Fragments';
-
+import ParentComp from './components/memo/ParentComp';
 
 
 function App() {
@@ -52,7 +52,8 @@ function App() {
       {/* < LifecycleA /> */}
       {/* Pure Component */}
 
-      <Fragments />
+      {/* <Fragments /> */}
+      <ParentComp />
 
 
     </div>
