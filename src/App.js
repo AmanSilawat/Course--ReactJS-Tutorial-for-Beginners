@@ -10,6 +10,8 @@ import NameList from './components/list-key-rendering/NameList';
 import Stylesheet from './components/Stylesheet';
 import Form from './components/form/Form';
 
+// import LifecycleA from './components/mounting-lifecycle-methods/LifecycleA';
+
 
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
 
       {/* <Form /> */}
 
+      {/* Component Mounting Lifecycle Methods */}
 
 
 
