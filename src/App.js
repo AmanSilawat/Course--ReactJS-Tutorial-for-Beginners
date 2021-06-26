@@ -11,6 +11,7 @@ import Stylesheet from './components/Stylesheet';
 import Form from './components/form/Form';
 
 // import LifecycleA from './components/mounting-lifecycle-methods/LifecycleA';
+import LifecycleA from './components/updating-lifecycle-methods/LifecycleA';
 
 
 
@@ -43,6 +44,7 @@ function App() {
       {/* <Form /> */}
 
       {/* Component Mounting Lifecycle Methods */}
+      {/* Component updating Lifecycle Methods */}
 
 
 
