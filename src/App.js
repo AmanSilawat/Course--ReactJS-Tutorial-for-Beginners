@@ -15,6 +15,7 @@ import LifecycleA from './components/updating-lifecycle-methods/LifecycleA';
 import PureComp from './components/pure_components/PureComp';
 // import ParentComp from './components/pure_components/ParentComp';
 
+import Fragments from './components/Fragments';
 
 
 
@@ -51,8 +52,7 @@ function App() {
       {/* < LifecycleA /> */}
       {/* Pure Component */}
 
-      
-      <ParentComp />
+      <Fragments />
 
 
     </div>
