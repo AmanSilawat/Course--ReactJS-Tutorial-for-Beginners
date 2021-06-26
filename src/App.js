@@ -12,6 +12,9 @@ import Form from './components/form/Form';
 
 // import LifecycleA from './components/mounting-lifecycle-methods/LifecycleA';
 import LifecycleA from './components/updating-lifecycle-methods/LifecycleA';
+import PureComp from './components/pure_components/PureComp';
+// import ParentComp from './components/pure_components/ParentComp';
+
 
 
 
@@ -45,7 +48,11 @@ function App() {
 
       {/* Component Mounting Lifecycle Methods */}
       {/* Component updating Lifecycle Methods */}
+      {/* < LifecycleA /> */}
+      {/* Pure Component */}
 
+      
+      <ParentComp />
 
 
     </div>
