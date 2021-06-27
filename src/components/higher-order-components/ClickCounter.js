@@ -4,8 +4,8 @@ import WithCounter from './WithCounter';
 class ClickCounter extends React.Component {
     render() {
         const { count, incrementCount } = this.props;
-        return <button onClick={incrementCount}> Clicked {count} times</button>
+        return <button onClick={incrementCount}> {this.props.name} Clicked {count} times</button>
     }
 }
 
-export default WithCounter(ClickCounter);
+export default WithCounter(ClickCounter, 5);
