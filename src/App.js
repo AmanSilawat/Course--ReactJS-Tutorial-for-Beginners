@@ -2,7 +2,7 @@ import { Greet } from './components/Greet';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
 import './components/styling-css/appStyles.css'
 import styles from './components/styling-css/appStyles.module.css'
 // import ParentComponent from './components/ParentComponent';
@@ -27,6 +27,10 @@ import Hero from './components/error-boundary/Hero'
 import ErrorBoundary from './components/error-boundary/ErrorBoundary'
 import ClickCounter from './components/higher-order-components/ClickCounter';
 import HoverCounter from './components/higher-order-components/HoverCounter';
+
+import ClickCounterTwo from './components/render-props/ClickCounterTwo';
+import HoverCounterTwo from './components/render-props/HoverCounterTwo';
+import Counter from './components/render-props/Counter';
 
 
 
@@ -90,8 +94,35 @@ function App() {
         <Hero heroName="joker" />
       </ErrorBoundary> */}
 
-      <ClickCounter name="aman" />
-      <HoverCounter />
+      {/* <ClickCounter name="aman" />
+      <HoverCounter /> */}
+
+      {/* ------------------ */}
+      
+      <Counter render={(count, incrementCount) => (
+        <ClickCounterTwo count={count} incrementCount={incrementCount} />
+      )} />
+      
+      <Counter render={(count, incrementCount) => (
+        <HoverCounterTwo count={count} incrementCount={incrementCount} />
+      )} />
+
+      {/* &&&&&&&& */}
+
+      {/* <Counter>
+        {(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </Counter>
+
+      <Counter>
+        {(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </Counter> */}
+
+      {/* ------------------ */}
+
 
     </div>
   );
