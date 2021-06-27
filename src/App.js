@@ -18,6 +18,10 @@ import PureComp from './components/pure_components/PureComp';
 import Fragments from './components/Fragments';
 import ParentComp from './components/memo/ParentComp';
 
+import Refs from './components/Refs';
+
+
+
 
 function App() {
   return (
@@ -53,7 +57,9 @@ function App() {
       {/* Pure Component */}
 
       {/* <Fragments /> */}
-      <ParentComp />
+      {/* <ParentComp /> */}
+
+      <Refs />
 
 
     </div>
