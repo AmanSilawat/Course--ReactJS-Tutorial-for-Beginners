@@ -25,6 +25,8 @@ import Portal from './components/portals/Portal';
 
 import Hero from './components/error-boundary/Hero'
 import ErrorBoundary from './components/error-boundary/ErrorBoundary'
+import ClickCounter from './components/higher-order-components/ClickCounter';
+import HoverCounter from './components/higher-order-components/HoverCounter';
 
 
 
@@ -76,17 +78,20 @@ function App() {
         <Hero heroName="joker" />
       </ErrorBoundary> */}
 
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <Hero heroName="batman" />
       </ErrorBoundary>
 
       <ErrorBoundary>
         <Hero heroName="superman" />
       </ErrorBoundary >
-      
+
       <ErrorBoundary>
         <Hero heroName="joker" />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
+
+      <ClickCounter />
+      <HoverCounter />
 
     </div>
   );
