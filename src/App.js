@@ -23,7 +23,8 @@ import RefsWithClass from './components/refs_demo/RefsWithClass';
 import FRParentInput from './components/refs_demo/FRParentInput';
 import Portal from './components/portals/Portal';
 
-
+import Hero from './components/error-boundary/Hero'
+import ErrorBoundary from './components/error-boundary/ErrorBoundary'
 
 
 
@@ -67,7 +68,25 @@ function App() {
       {/* <RefsWithClass /> */}
       {/* <FRParentInput /> */}
 
-      <Portal />
+      {/* <Portal /> */}
+
+      {/* <ErrorBoundary>
+        <Hero heroName="batman" />
+        <Hero heroName="superman" />
+        <Hero heroName="joker" />
+      </ErrorBoundary> */}
+
+      <ErrorBoundary>
+        <Hero heroName="batman" />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName="superman" />
+      </ErrorBoundary >
+      
+      <ErrorBoundary>
+        <Hero heroName="joker" />
+      </ErrorBoundary>
 
     </div>
   );
