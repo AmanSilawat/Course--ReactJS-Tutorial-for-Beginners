@@ -31,6 +31,8 @@ import HoverCounter from './components/higher-order-components/HoverCounter';
 import ClickCounterTwo from './components/render-props/ClickCounterTwo';
 import HoverCounterTwo from './components/render-props/HoverCounterTwo';
 import Counter from './components/render-props/Counter';
+import ComponentC from './components/context/ComponentC';
+import { UserConsumer, UserProvider } from './components/context/UserContext';
 
 
 
@@ -99,13 +101,13 @@ function App() {
 
       {/* ------------------ */}
       
-      <Counter render={(count, incrementCount) => (
+      {/* <Counter render={(count, incrementCount) => (
         <ClickCounterTwo count={count} incrementCount={incrementCount} />
       )} />
       
       <Counter render={(count, incrementCount) => (
         <HoverCounterTwo count={count} incrementCount={incrementCount} />
-      )} />
+      )} /> */}
 
       {/* &&&&&&&& */}
 
@@ -122,6 +124,13 @@ function App() {
       </Counter> */}
 
       {/* ------------------ */}
+
+      {/* ----content---- */}
+      
+      
+      <UserProvider value="aman">
+          <ComponentC />
+      </UserProvider>
 
 
     </div>
