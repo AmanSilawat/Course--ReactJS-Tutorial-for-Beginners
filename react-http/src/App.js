@@ -4,12 +4,13 @@ import PostForm from './components/post-request/PostForm';
 import HookCounter from './components/use-state-hook/HookCounter';
 import HookCounterTwo from './components/use-state-previous-state/HookCounterTwo';
 import HookCounterTree from './components/use-state-object/HookCounterThree';
+import HookCounterFour from './components/use-state-array/HookCounterFour';
 
 
 function App() {
   return (
     <div>
-      <HookCounterTree />
+      <HookCounterFour />
     </div>
   );
 }
