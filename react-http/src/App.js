@@ -1,10 +1,11 @@
 import React from 'react';
 import PostList from './components/get-request/PostList'
+import PostForm from './components/post-request/PostForm';
 
 function App() {
   return (
     <div>
-      <PostList />
+      <PostForm />
     </div>
   );
 }
