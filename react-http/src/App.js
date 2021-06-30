@@ -7,12 +7,13 @@ import HookCounterTree from './components/use-state-object/HookCounterThree';
 import HookCounterFour from './components/use-state-array/HookCounterFour';
 import HookCounterOne from './components/use-effect/HookCounterOne';
 import DataFetching from './components/fetching-data with-use-effect/DataFetching';
+import DataFetchingPost from './components/fetching-data with-use-effect/DataFetchingPost';
 
 
 function App() {
   return (
     <div>
-      <DataFetching />
+      <DataFetchingPost />
     </div>
   );
 }
