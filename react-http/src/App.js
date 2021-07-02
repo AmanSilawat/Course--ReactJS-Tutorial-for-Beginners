@@ -20,9 +20,9 @@ import DataFetchingPostButton from './components/fetching-data with-use-effect/D
 // export const ThemeContext = React.createContext();
 
 // ! useReducer
-import CounterOne from './components/use-reducer/simple-ex/CounterOne';
-import CounterTwo from './components/use-reducer/complex-ex/CounterTwo';
-import CounterThree from './components/use-reducer/multiple-reducer/CounterThree';
+// import CounterOne from './components/use-reducer/simple-ex/CounterOne';
+// import CounterTwo from './components/use-reducer/complex-ex/CounterTwo';
+// import CounterThree from './components/use-reducer/multiple-reducer/CounterThree';
 
 // ! useReducer - with context
 // import ComponentA from './components/use-reducer/with-use-context/ComponentA';
@@ -57,7 +57,11 @@ import ParentComponent from './components/use-callback/ParentComponent';
 import Counter from './components/use-memo/Counter';
 import FocusInput from './components/use-ref/FocusInput';
 import SecondUseCase from './components/use-ref/SecondUseCase';
-
+import DocTitleOne from './components/custom-hook/doc-title/DocTitleOne';
+import DocTitleTwo from './components/custom-hook/doc-title/DocTitleTwo';
+import CounterOne from './components/custom-hook/counter/CounterOne';
+import CounterTwo from './components/custom-hook/counter/CounterTwo';
+import UserForm from './components/custom-hook/input/UserForm';
 
 
 
@@ -104,7 +108,24 @@ function App() {
 
     // ! useRef
     // <FocusInput />
-    <SecondUseCase />
+    // <SecondUseCase />
+
+    // ! custom hoot
+
+    // <div>
+    //   <DocTitleOne />
+    //   <DocTitleTwo />
+    // </div>
+
+    // <div>
+    //   <CounterOne />
+    //   <CounterTwo />
+    // </div>
+
+    <div>
+      <UserForm />
+    </div>
+
 
   )
   
