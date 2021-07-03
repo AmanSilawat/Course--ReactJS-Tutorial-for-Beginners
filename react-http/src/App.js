@@ -9,12 +9,14 @@ import HookCounterOne from './components/use-effect/HookCounterOne';
 import DataFetching from './components/fetching-data with-use-effect/DataFetching';
 import DataFetchingPost from './components/fetching-data with-use-effect/DataFetchingPost';
 import ConditionallyRunEffects from './components/use-effect/ConditionallyRunEffects';
+import MouseContainer from './components/use-effect/cleanup/MouseContainer';
+
 
 
 function App() {
   return (
     <div>
-      <ConditionallyRunEffects />
+      <MouseContainer />
     </div>
   );
 }
