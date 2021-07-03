@@ -51,8 +51,12 @@ import CounterThree from './components/use-reducer/multiple-reducer/CounterThree
 // !useReducer - Fetching data
 import DataFetchingOne from './components/use-reducer/data-fetching/DataFetchingOne';
 import DataFetchingTwo from './components/use-reducer/data-fetching/DataFetchingTwo';
+
+
 import ParentComponent from './components/use-callback/ParentComponent';
 import Counter from './components/use-memo/Counter';
+import FocusInput from './components/use-ref/FocusInput';
+import SecondUseCase from './components/use-ref/SecondUseCase';
 
 
 
@@ -96,7 +100,12 @@ function App() {
     // <ParentComponent />
 
     // ! useMemo
-    <Counter />
+    // <Counter />
+
+    // ! useRef
+    // <FocusInput />
+    <SecondUseCase />
+
   )
   
 }
