@@ -10,13 +10,16 @@ import DataFetching from './components/fetching-data with-use-effect/DataFetchin
 import DataFetchingPost from './components/fetching-data with-use-effect/DataFetchingPost';
 import ConditionallyRunEffects from './components/use-effect/ConditionallyRunEffects';
 import MouseContainer from './components/use-effect/cleanup/MouseContainer';
+import IntervalHookCounter from './components/use-effect/incorrect-dependency/IntervalHookCounter';
+import IntervalClassCounter from './components/use-effect/incorrect-dependency/IntervalClassCounter';
 
 
 
 function App() {
   return (
     <div>
-      <MouseContainer />
+      <IntervalHookCounter />
+      <IntervalClassCounter />
     </div>
   );
 }
