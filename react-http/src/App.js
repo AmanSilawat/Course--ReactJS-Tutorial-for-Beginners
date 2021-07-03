@@ -12,14 +12,14 @@ import ConditionallyRunEffects from './components/use-effect/ConditionallyRunEff
 import MouseContainer from './components/use-effect/cleanup/MouseContainer';
 import IntervalHookCounter from './components/use-effect/incorrect-dependency/IntervalHookCounter';
 import IntervalClassCounter from './components/use-effect/incorrect-dependency/IntervalClassCounter';
+import DataFetchingPostButton from './components/fetching-data with-use-effect/DataFetchingPostButton';
 
 
 
 function App() {
   return (
     <div>
-      <IntervalHookCounter />
-      <IntervalClassCounter />
+      <DataFetchingPostButton />
     </div>
   );
 }
