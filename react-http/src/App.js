@@ -21,6 +21,7 @@ import DataFetchingPostButton from './components/fetching-data with-use-effect/D
 
 // ! useReducer
 import CounterOne from './components/use-reducer/simple-ex/CounterOne';
+import CounterTwo from './components/use-reducer/complex-ex/CounterTwo';
 
 
 function App() {
@@ -37,7 +38,8 @@ function App() {
 
   // ! useReducer
   return (
-    <CounterOne />
+    // <CounterOne />
+    <CounterTwo />
   )
   
 }
