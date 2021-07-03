@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import PostList from './components/get-request/PostList'
 import PostForm from './components/post-request/PostForm';
 import HookCounter from './components/use-state-hook/HookCounter';
@@ -22,6 +22,33 @@ import DataFetchingPostButton from './components/fetching-data with-use-effect/D
 // ! useReducer
 import CounterOne from './components/use-reducer/simple-ex/CounterOne';
 import CounterTwo from './components/use-reducer/complex-ex/CounterTwo';
+import CounterThree from './components/use-reducer/multiple-reducer/CounterThree';
+
+// ! useReducer - with context
+import ComponentA from './components/use-reducer/with-use-context/ComponentA';
+import ComponentB from './components/use-reducer/with-use-context/ComponentB';
+import ComponentC from './components/use-reducer/with-use-context/ComponentC';
+export const CounterContext = React.createContext();
+const initialState = 0;
+
+function reducer(state, action) {
+  console.log(state);
+  switch (action) {
+    case 'increment':
+      return state + 1;
+
+    case 'decrement':
+      return state - 1;
+
+    case 'reset':
+      return initialState;
+
+    default:
+      return state;
+  }
+}
+
+
 
 
 function App() {
@@ -36,10 +63,23 @@ function App() {
   //   </div>
   // );
 
+  
   // ! useReducer
+  const [counter, dispatch] = useReducer(reducer, initialState)
   return (
     // <CounterOne />
-    <CounterTwo />
+    // <CounterTwo />
+
+    // !useReducer - multiple reducer
+    // <CounterThree />
+
+    // !useReducer - with context
+    <CounterContext.Provider value={{ counter, dispatch }}>
+      count : {counter}
+      <ComponentA />
+      <ComponentB />
+      <ComponentC />
+    </CounterContext.Provider>
   )
   
 }
