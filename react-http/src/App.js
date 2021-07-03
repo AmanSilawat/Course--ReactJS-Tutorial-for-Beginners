@@ -25,28 +25,32 @@ import CounterTwo from './components/use-reducer/complex-ex/CounterTwo';
 import CounterThree from './components/use-reducer/multiple-reducer/CounterThree';
 
 // ! useReducer - with context
-import ComponentA from './components/use-reducer/with-use-context/ComponentA';
-import ComponentB from './components/use-reducer/with-use-context/ComponentB';
-import ComponentC from './components/use-reducer/with-use-context/ComponentC';
-export const CounterContext = React.createContext();
-const initialState = 0;
+// import ComponentA from './components/use-reducer/with-use-context/ComponentA';
+// import ComponentB from './components/use-reducer/with-use-context/ComponentB';
+// import ComponentC from './components/use-reducer/with-use-context/ComponentC';
+// export const CounterContext = React.createContext();
+// const initialState = 0;
 
-function reducer(state, action) {
-  console.log(state);
-  switch (action) {
-    case 'increment':
-      return state + 1;
+// function reducer(state, action) {
+//   console.log(state);
+//   switch (action) {
+//     case 'increment':
+//       return state + 1;
 
-    case 'decrement':
-      return state - 1;
+//     case 'decrement':
+//       return state - 1;
 
-    case 'reset':
-      return initialState;
+//     case 'reset':
+//       return initialState;
 
-    default:
-      return state;
-  }
-}
+//     default:
+//       return state;
+//   }
+// }
+
+// !useReducer - Fetching data
+import DataFetchingOne from './components/use-reducer/data-fetching/DataFetchingOne';
+import DataFetchingTwo from './components/use-reducer/data-fetching/DataFetchingTwo';
 
 
 
@@ -65,7 +69,7 @@ function App() {
 
   
   // ! useReducer
-  const [counter, dispatch] = useReducer(reducer, initialState)
+  // const [counter, dispatch] = useReducer(reducer, initialState)
   return (
     // <CounterOne />
     // <CounterTwo />
@@ -74,12 +78,16 @@ function App() {
     // <CounterThree />
 
     // !useReducer - with context
-    <CounterContext.Provider value={{ counter, dispatch }}>
-      count : {counter}
-      <ComponentA />
-      <ComponentB />
-      <ComponentC />
-    </CounterContext.Provider>
+    // <CounterContext.Provider value={{ counter, dispatch }}>
+    //   count : {counter}
+    //   <ComponentA />
+    //   <ComponentB />
+    //   <ComponentC />
+    // </CounterContext.Provider>
+
+    // !useReducer - Fetching data
+    // <DataFetchingOne />
+    <DataFetchingTwo />
   )
   
 }
