@@ -51,6 +51,7 @@ import CounterThree from './components/use-reducer/multiple-reducer/CounterThree
 // !useReducer - Fetching data
 import DataFetchingOne from './components/use-reducer/data-fetching/DataFetchingOne';
 import DataFetchingTwo from './components/use-reducer/data-fetching/DataFetchingTwo';
+import ParentComponent from './components/use-callback/ParentComponent';
 
 
 
@@ -87,7 +88,11 @@ function App() {
 
     // !useReducer - Fetching data
     // <DataFetchingOne />
-    <DataFetchingTwo />
+    // <DataFetchingTwo />
+
+
+    // ! useCallback
+    <ParentComponent />
   )
   
 }
