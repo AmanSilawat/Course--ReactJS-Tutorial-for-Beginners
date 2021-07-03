@@ -14,21 +14,32 @@ import IntervalHookCounter from './components/use-effect/incorrect-dependency/In
 import IntervalClassCounter from './components/use-effect/incorrect-dependency/IntervalClassCounter';
 import DataFetchingPostButton from './components/fetching-data with-use-effect/DataFetchingPostButton';
 
-import ComponentC from './components/use-context/ex/ComponentC';
-export const UserContext = React.createContext();
-export const ThemeContext = React.createContext();
+// ! context
+// import ComponentC from './components/use-context/ex/ComponentC';
+// export const UserContext = React.createContext();
+// export const ThemeContext = React.createContext();
+
+// ! useReducer
+import CounterOne from './components/use-reducer/simple-ex/CounterOne';
 
 
 function App() {
+  // ! context
+  // return (
+  //   <div>
+  //     <UserContext.Provider value="aman">
+  //       <ThemeContext.Provider value="purple">
+  //         <ComponentC />
+  //       </ThemeContext.Provider>
+  //     </UserContext.Provider>
+  //   </div>
+  // );
+
+  // ! useReducer
   return (
-    <div>
-      <UserContext.Provider value="aman">
-        <ThemeContext.Provider value="purple">
-          <ComponentC />
-        </ThemeContext.Provider>
-      </UserContext.Provider>
-    </div>
-  );
+    <CounterOne />
+  )
+  
 }
 
 export default App;
