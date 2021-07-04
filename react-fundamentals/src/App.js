@@ -1,38 +1,38 @@
-import { Greet } from './components/Greet';
-import Welcome from './components/Welcome';
-import Hello from './components/Hello';
-import Message from './components/Message';
+// import { Greet } from './components/Greet';
+// import Welcome from './components/Welcome';
+// import Hello from './components/Hello';
+// import Message from './components/Message';
 // import Counter from './components/Counter';
 import './components/styling-css/appStyles.css'
-import styles from './components/styling-css/appStyles.module.css'
+// import styles from './components/styling-css/appStyles.module.css'
 // import ParentComponent from './components/ParentComponent';
-import NameList from './components/list-key-rendering/NameList';
-import Stylesheet from './components/Stylesheet';
-import Form from './components/form/Form';
+// import NameList from './components/list-key-rendering/NameList';
+// import Stylesheet from './components/Stylesheet';
+// import Form from './components/form/Form';
 
 // import LifecycleA from './components/mounting-lifecycle-methods/LifecycleA';
 import LifecycleA from './components/updating-lifecycle-methods/LifecycleA';
-import PureComp from './components/pure_components/PureComp';
+// import PureComp from './components/pure_components/PureComp';
 // import ParentComp from './components/pure_components/ParentComp';
 
-import Fragments from './components/Fragments';
-import ParentComp from './components/memo/ParentComp';
+// import Fragments from './components/Fragments';
+// import ParentComp from './components/memo/ParentComp';
 
-import Refs from './components/refs_demo/Refs';
-import RefsWithClass from './components/refs_demo/RefsWithClass';
-import FRParentInput from './components/refs_demo/FRParentInput';
-import Portal from './components/portals/Portal';
+// import Refs from './components/refs_demo/Refs';
+// import RefsWithClass from './components/refs_demo/RefsWithClass';
+// import FRParentInput from './components/refs_demo/FRParentInput';
+// import Portal from './components/portals/Portal';
 
-import Hero from './components/error-boundary/Hero'
-import ErrorBoundary from './components/error-boundary/ErrorBoundary'
-import ClickCounter from './components/higher-order-components/ClickCounter';
-import HoverCounter from './components/higher-order-components/HoverCounter';
+// import Hero from './components/error-boundary/Hero'
+// import ErrorBoundary from './components/error-boundary/ErrorBoundary'
+// import ClickCounter from './components/higher-order-components/ClickCounter';
+// import HoverCounter from './components/higher-order-components/HoverCounter';
 
-import ClickCounterTwo from './components/render-props/ClickCounterTwo';
-import HoverCounterTwo from './components/render-props/HoverCounterTwo';
-import Counter from './components/render-props/Counter';
-import ComponentC from './components/context/ComponentC';
-import { UserConsumer, UserProvider } from './components/context/UserContext';
+// import ClickCounterTwo from './components/render-props/ClickCounterTwo';
+// import HoverCounterTwo from './components/render-props/HoverCounterTwo';
+// import Counter from './components/render-props/Counter';
+// import ComponentC from './components/context/ComponentC';
+// import { UserConsumer, UserProvider } from './components/context/UserContext';
 
 
 
@@ -66,7 +66,7 @@ function App() {
 
       {/* Component Mounting Lifecycle Methods */}
       {/* Component updating Lifecycle Methods */}
-      {/* < LifecycleA /> */}
+      < LifecycleA />
       {/* Pure Component */}
 
       {/* <Fragments /> */}
@@ -128,9 +128,9 @@ function App() {
       {/* ----content---- */}
       
       
-      <UserProvider value="aman">
+      {/* <UserProvider value="aman">
           <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
 
 
     </div>

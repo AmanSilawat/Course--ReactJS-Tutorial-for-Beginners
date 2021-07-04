@@ -12,7 +12,10 @@ class LifecycleA extends React.Component {
     }
 
     static getDerivedStateFromProps(props, state) {
-        console.log('LifecycleA getDerivedStateFromProps')
+        console.log('LifecycleA getDerivedStateFromProps', props, state);
+        if (state.name === 'Aman') {
+            return {name: "Rahul"}
+        }
         return null
     }
 
@@ -20,8 +23,8 @@ class LifecycleA extends React.Component {
         console.log('LifecycleA componentDidMount')
     }
 
-    shouldComponentUpdate() {
-        console.log('LifecycleA shouldComponentUpdate')
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('LifecycleA shouldComponentUpdate', nextProps, nextState)
         return true;
     }
 
@@ -44,8 +47,10 @@ class LifecycleA extends React.Component {
         console.log('LifecycleA render')
         return (
             <div>
+                {this.state.name}
                 <button onClick={this.changeState}>Change state</button>
-				LifecycleA<LifecycleB />
+				LifecycleA
+                <LifecycleB />
             </div>
         )
     }
